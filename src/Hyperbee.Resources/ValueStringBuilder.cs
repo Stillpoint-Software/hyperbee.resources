@@ -11,6 +11,8 @@
 
 #nullable enable
 
+// FIX: Pulled from Hyperbee.Text is not OpenSource yet.
+
 using System.Buffers;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
