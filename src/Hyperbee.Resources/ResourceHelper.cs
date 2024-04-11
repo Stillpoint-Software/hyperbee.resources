@@ -52,9 +52,35 @@ public static class ResourceHelper
     private static readonly char[] InvalidChars =
     [
         ' ',
-        '\u00A0' /* non-breaking space */, ',', ';', '|', '~', '@',
-        '#', '%', '^', '&', '*', '+', '-', '/', '\\', '<', '>', '?', '[',
-        ']', '(', ')', '{', '}', '\"', '\'', '!', '`', '='
+        '\u00A0' /* non-breaking space */,
+        ',',
+        ';',
+        '|',
+        '~',
+        '@',
+        '#',
+        '%',
+        '^',
+        '&',
+        '*',
+        '+',
+        '-',
+        '/',
+        '\\',
+        '<',
+        '>',
+        '?',
+        '[',
+        ']',
+        '(',
+        ')',
+        '{',
+        '}',
+        '\"',
+        '\'',
+        '!',
+        '`',
+        '='
     ];
 
     private static string SanitizeName( ReadOnlySpan<char> name )
