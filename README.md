@@ -2,29 +2,19 @@
 
 Provides a dependency injection pattern for embedded resources
 
-## Usage
 
-Implement IResourceLocator and set the implementation's namespace to your resource location.
+# Build Requirements
 
-Inject IResourceProvider<Implementation> to use.
+* To build and run this project, **.NET 8 SDK** is required.
+* Ensure your development tools are compatible with .NET 8.
 
+## Building the Project
 
+* With .NET 8 SDK installed, you can build the project using the standard `dotnet build` command.
 
-**For example:**
+## Running Tests
 
-
-*this gives the path to the resources*
-
- `public class MyResourceLocator : IResourceLocator
- {
-     public string Namespace => typeof(MyResourceLocator).Namespace; 
- }`
-
- *register the provider*
-
-* `services.AddTransient<IResourceProvider<MyResourceLocator>>();`
-* `var locator = services.GetService<IResourceProvider<MyResourceLocator>>();`
-* `var resource = ResourceHelper.GetResource( locator, "resourceName" ); `
+* Run tests using the `dotnet test` command as usual.
 
 # Status
 
