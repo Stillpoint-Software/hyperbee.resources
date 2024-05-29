@@ -24,8 +24,9 @@ Provides a dependency injection pattern for embedded resources
 | `main`     | [![Build status](https://github.com/Stillpoint-Software/Hyperbee.Resources/actions/workflows/publish.yml/badge.svg)](https://github.com/Stillpoint-Software/Hyperbee.Resources/actions/workflows/publish.yml)                 |
 
 
-[![Hyperbee.Resource](https://github.com/Stillpoint-Software/Hyperbee.Resources/blob/main/assets/hyperbee.jpg?raw=true)](https://github.com/Stillpoint-Software/Hyperbee.Resources)
-
 # Help
 
 See [Todo](https://github.com/Stillpoint-Software/Hyperbee.Resources/blob/main/docs/todo.md)
+
+
+[![Hyperbee.Resources](https://github.com/Stillpoint-Software/Hyperbee.Resources/blob/main/assets/hyperbee.svg?raw=true)](https://github.com/Stillpoint-Software/Hyperbee.Resources)
