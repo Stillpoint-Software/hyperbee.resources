@@ -29,7 +29,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyperbee.Resources", "src\H
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{3F11E2F8-DDBB-4CEC-8364-ADBC05A17E9D}"
 	ProjectSection(SolutionItems) = preProject
-		.github\workflows\create-prerelease.yml = .github\workflows\create-prerelease.yml
 		.github\workflows\create-release.yml = .github\workflows\create-release.yml
 		.github\workflows\format.yml = .github\workflows\format.yml
 		.github\workflows\issue-branch.yml = .github\workflows\issue-branch.yml
@@ -39,7 +38,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\unlist-nuget.yml = .github\workflows\unlist-nuget.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hyperbee.Resources.Tests", "test\Hyperbee.Resources.Tests\Hyperbee.Resources.Tests.csproj", "{C9DFA58D-268B-4CCD-807C-ECB81053856B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyperbee.Resources.Tests", "test\Hyperbee.Resources.Tests\Hyperbee.Resources.Tests.csproj", "{C9DFA58D-268B-4CCD-807C-ECB81053856B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
