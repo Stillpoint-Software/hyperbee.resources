@@ -49,6 +49,12 @@ public static class ResourceHelper
         return $"{locator.Namespace}.{sanitizedName}";
     }
 
+
+    public static string[] GetResourceNames( IResourceLocator locator )
+    {
+        return locator.GetType().Assembly.GetManifestResourceNames();
+    }
+
     private static readonly char[] InvalidChars =
     [
         ' ',

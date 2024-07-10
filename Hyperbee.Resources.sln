@@ -25,11 +25,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{2D48
 		.github\issue-branch.yml = .github\issue-branch.yml
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Hyperbee.Resources", "src\Hyperbee.Resources\Hyperbee.Resources.csproj", "{B1539F5A-4780-4DFA-BD48-BFB09AFFE3F7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyperbee.Resources", "src\Hyperbee.Resources\Hyperbee.Resources.csproj", "{B1539F5A-4780-4DFA-BD48-BFB09AFFE3F7}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{3F11E2F8-DDBB-4CEC-8364-ADBC05A17E9D}"
 	ProjectSection(SolutionItems) = preProject
-		.github\workflows\create-prerelease.yml = .github\workflows\create-prerelease.yml
 		.github\workflows\create-release.yml = .github\workflows\create-release.yml
 		.github\workflows\format.yml = .github\workflows\format.yml
 		.github\workflows\issue-branch.yml = .github\workflows\issue-branch.yml
@@ -38,6 +37,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\test.yml = .github\workflows\test.yml
 		.github\workflows\unlist-nuget.yml = .github\workflows\unlist-nuget.yml
 	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyperbee.Resources.Tests", "test\Hyperbee.Resources.Tests\Hyperbee.Resources.Tests.csproj", "{C9DFA58D-268B-4CCD-807C-ECB81053856B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +50,10 @@ Global
 		{B1539F5A-4780-4DFA-BD48-BFB09AFFE3F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B1539F5A-4780-4DFA-BD48-BFB09AFFE3F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B1539F5A-4780-4DFA-BD48-BFB09AFFE3F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9DFA58D-268B-4CCD-807C-ECB81053856B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9DFA58D-268B-4CCD-807C-ECB81053856B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9DFA58D-268B-4CCD-807C-ECB81053856B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9DFA58D-268B-4CCD-807C-ECB81053856B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -57,6 +62,7 @@ Global
 		{0837D817-CA17-4D78-8767-806079D4F0F0} = {D9648393-6F08-43BB-A860-CE7E5518E23F}
 		{2D48C1F2-0FEE-4311-9A47-D547166735A3} = {D9648393-6F08-43BB-A860-CE7E5518E23F}
 		{3F11E2F8-DDBB-4CEC-8364-ADBC05A17E9D} = {2D48C1F2-0FEE-4311-9A47-D547166735A3}
+		{C9DFA58D-268B-4CCD-807C-ECB81053856B} = {3578FD7E-CD36-4C2B-974C-52C56F7B60AB}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D1BE373C-31C9-468E-8DCC-7C214765266B}
