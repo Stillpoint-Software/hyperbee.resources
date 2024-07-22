@@ -9,7 +9,7 @@
 
     <Authors>Stillpoint Software, Inc.</Authors>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageTags>Resources;NET</PackageTags>
+    <PackageTags>resources;NET;embedded resources</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
     <PackageProjectUrl>https://github.com/Stillpoint-Software/Hyperbee.Resources/</PackageProjectUrl>
     <TargetFrameworks>net8.0</TargetFrameworks>
