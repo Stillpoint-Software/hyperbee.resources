@@ -31,7 +31,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 		.github\workflows\test-report.yml = .github\workflows\test-report.yml
 		.github\workflows\test.yml = .github\workflows\test.yml
 		.github\workflows\unlist-nuget.yml = .github\workflows\unlist-nuget.yml
-		unlist-nuget.yml = unlist-nuget.yml
 		update-version.yml = update-version.yml
 	EndProjectSection
 EndProject
