@@ -26,7 +26,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{
 	ProjectSection(SolutionItems) = preProject
 		.github\workflows\Create Issue Branch.yml = .github\workflows\Create Issue Branch.yml
 		.github\workflows\Create Release.yml = .github\workflows\Create Release.yml
+		.github\workflows\Format.yml = .github\workflows\Format.yml
+		.github\workflows\Publish.yml = .github\workflows\Publish.yml
 		.github\workflows\Test Report.yml = .github\workflows\Test Report.yml
+		.github\workflows\Test.yml = .github\workflows\Test.yml
 		.github\workflows\Unlist Nuget.yml = .github\workflows\Unlist Nuget.yml
 		.github\workflows\Update Version.yml = .github\workflows\Update Version.yml
 	EndProjectSection
