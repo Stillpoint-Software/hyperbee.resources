@@ -14,11 +14,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Tests", "Solution Tests", "{3578FD7E-CD36-4C2B-974C-52C56F7B60AB}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{0837D817-CA17-4D78-8767-806079D4F0F0}"
-	ProjectSection(SolutionItems) = preProject
-		todo.md = todo.md
-	EndProjectSection
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".github", ".github", "{2D48C1F2-0FEE-4311-9A47-D547166735A3}"
 	ProjectSection(SolutionItems) = preProject
 		.github\dependabot.yml = .github\dependabot.yml
@@ -29,16 +24,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyperbee.Resources", "src\H
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{3F11E2F8-DDBB-4CEC-8364-ADBC05A17E9D}"
 	ProjectSection(SolutionItems) = preProject
-		.github\workflows\create-release.yml = .github\workflows\create-release.yml
-		.github\workflows\format.yml = .github\workflows\format.yml
-		.github\workflows\issue-branch.yml = .github\workflows\issue-branch.yml
-		.github\workflows\publish.yml = .github\workflows\publish.yml
-		.github\workflows\test-report.yml = .github\workflows\test-report.yml
-		.github\workflows\test.yml = .github\workflows\test.yml
-		.github\workflows\unlist-nuget.yml = .github\workflows\unlist-nuget.yml
+		.github\workflows\Create Issue Branch.yml = .github\workflows\Create Issue Branch.yml
+		.github\workflows\Create Release.yml = .github\workflows\Create Release.yml
+		.github\workflows\Format.yml = .github\workflows\Format.yml
+		.github\workflows\Publish.yml = .github\workflows\Publish.yml
+		.github\workflows\Test Report.yml = .github\workflows\Test Report.yml
+		.github\workflows\Test.yml = .github\workflows\Test.yml
+		.github\workflows\Unlist Nuget.yml = .github\workflows\Unlist Nuget.yml
+		.github\workflows\Update Version.yml = .github\workflows\Update Version.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyperbee.Resources.Tests", "test\Hyperbee.Resources.Tests\Hyperbee.Resources.Tests.csproj", "{C9DFA58D-268B-4CCD-807C-ECB81053856B}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "docs", "docs\docs.shproj", "{0CBE4E5F-4F8C-40C8-84FC-1BFE89E9018D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -59,12 +57,15 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{0837D817-CA17-4D78-8767-806079D4F0F0} = {D9648393-6F08-43BB-A860-CE7E5518E23F}
 		{2D48C1F2-0FEE-4311-9A47-D547166735A3} = {D9648393-6F08-43BB-A860-CE7E5518E23F}
 		{3F11E2F8-DDBB-4CEC-8364-ADBC05A17E9D} = {2D48C1F2-0FEE-4311-9A47-D547166735A3}
 		{C9DFA58D-268B-4CCD-807C-ECB81053856B} = {3578FD7E-CD36-4C2B-974C-52C56F7B60AB}
+		{0CBE4E5F-4F8C-40C8-84FC-1BFE89E9018D} = {D9648393-6F08-43BB-A860-CE7E5518E23F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D1BE373C-31C9-468E-8DCC-7C214765266B}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		docs\docs.projitems*{0cbe4e5f-4f8c-40c8-84fc-1bfe89e9018d}*SharedItemsImports = 13
 	EndGlobalSection
 EndGlobal

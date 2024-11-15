@@ -5,8 +5,8 @@ Provides a dependency injection pattern for embedded resources
 
 # Build Requirements
 
-* To build and run this project, **.NET 8 SDK** is required.
-* Ensure your development tools are compatible with .NET 8.
+* To build and run this project, **.NET 9 SDK** is required.
+* Ensure your development tools are compatible with .NET 9.
 
 ## Building the Project
 
