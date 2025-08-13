@@ -6,10 +6,9 @@ MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D9648393-6F08-43BB-A860-CE7E5518E23F}"
 	ProjectSection(SolutionItems) = preProject
 		Directory.Build.props = Directory.Build.props
-		Directory.Build.targets = Directory.Build.targets
 		LICENSE = LICENSE
 		README.md = README.md
-		solution-helper.psm1 = solution-helper.psm1
+		version.json = version.json
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Tests", "Solution Tests", "{3578FD7E-CD36-4C2B-974C-52C56F7B60AB}"
@@ -24,14 +23,14 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyperbee.Resources", "src\H
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "workflows", "workflows", "{3F11E2F8-DDBB-4CEC-8364-ADBC05A17E9D}"
 	ProjectSection(SolutionItems) = preProject
-		.github\workflows\Create Issue Branch.yml = .github\workflows\Create Issue Branch.yml
-		.github\workflows\Create Release.yml = .github\workflows\Create Release.yml
-		.github\workflows\Format.yml = .github\workflows\Format.yml
-		.github\workflows\Publish.yml = .github\workflows\Publish.yml
-		.github\workflows\Test Report.yml = .github\workflows\Test Report.yml
-		.github\workflows\Test.yml = .github\workflows\Test.yml
-		.github\workflows\Unlist Nuget.yml = .github\workflows\Unlist Nuget.yml
-		.github\workflows\Update Version.yml = .github\workflows\Update Version.yml
+		.github\workflows\format.yml = .github\workflows\format.yml
+		.github\workflows\create_test_report.yml = .github\workflows\create_test_report.yml
+		.github\workflows\create_release.yml = .github\workflows\create_release.yml
+		.github\workflows\issue_branch.yml = .github\workflows\issue_branch.yml
+		.github\workflows\pack_publish.yml = .github\workflows\pack_publish.yml
+		.github\workflows\run_tests.yml = .github\workflows\run_tests.yml
+		.github\workflows\unlist_package.yml = .github\workflows\unlist_package.yml
+		.github\workflows\deploy_github_pages.yml = .github\workflows\deploy_github_pages.yml
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hyperbee.Resources.Tests", "test\Hyperbee.Resources.Tests\Hyperbee.Resources.Tests.csproj", "{C9DFA58D-268B-4CCD-807C-ECB81053856B}"
