@@ -9,6 +9,8 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+
+    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting" Version="4.14.0" />
   </ItemGroup>
 
   <!-- SourceLink / build hygiene -->
@@ -22,26 +24,27 @@
   <!-- Package metadata applied only to packable projects -->
   <PropertyGroup Condition="'$(IsPackable)' == 'true'">
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
 
-    <PackageReleaseNotes>https://github.com/Stillpoint-Software/Hyperbee.Resources/releases/latest</PackageReleaseNotes>
+    <PackageReleaseNotes>https://github.com/Stillpoint-Software/Hyperbee.Collections/releases/latest</PackageReleaseNotes>
 
-    <RepositoryUrl>https://github.com/Stillpoint-Software/Hyperbee.Resources</RepositoryUrl>
+    <RepositoryUrl>https://github.com/Stillpoint-Software/Hyperbee.Collections</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageProjectUrl>https://github.com/Stillpoint-Software/Hyperbee.Resources</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Stillpoint-Software/Hyperbee.Collections</PackageProjectUrl>
   </PropertyGroup>
 
   <!-- Pull README & LICENSE into the package root -->
   <ItemGroup Condition="'$(IsPackable)' == 'true'">
+    <None Include="..\..\assets\icon.png" Pack="true" Visible="false" PackagePath="/" />
     <None Include="$(MSBuildThisFileDirectory)README.md"
           Pack="true"
           PackagePath="\"
           Link="README.md" />
 
-    <None Include="$(MSBuildThisFileDirectory)LICENSE.txt"
+    <None Include="$(MSBuildThisFileDirectory)LICENSE"
           Pack="true"
           PackagePath="\"
-          Link="LICENSE.txt" />
+          Link="LICENSE" />
   </ItemGroup>
 </Project>
