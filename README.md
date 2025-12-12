@@ -27,7 +27,7 @@ Inject IResourceProvider<Implementation> to use.
 
 # Build Requirements
 
-* To build and run this project, **.NET 9 SDK** is required.
+* To build and run this project, **.NET 10 SDK** is required.
 * Ensure your development tools are compatible with .NET 8 or higher.
 
 ## Building the Project
