@@ -46,11 +46,6 @@ Inject IResourceProvider<Implementation> to use.
 | `develop`  | [![Build status](https://github.com/Stillpoint-Software/hyperbee.resources/actions/workflows/publish.yml/badge.svg?branch=develop)](https://github.com/Stillpoint-Software/hyperbee.resources/actions/workflows/pack_publish.yml)  |
 | `main`     | [![Build status](https://github.com/Stillpoint-Software/hyperbee.resources/actions/workflows/publish.yml/badge.svg)](https://github.com/Stillpoint-Software/hyperbee.resources/actions/workflows/pack_publish.yml)                 |
 
-
-# Benchmarks
- See [Benchmarks](https://github.com/Stillpoint-Software/Hyperbee.Resources/test/Hyperbee.Resources.Benchmark/benchmark/results/Hyperbee.Resources.Benchmark.ResourcesBenchmark-report-github.md)
- 
-
 # Help
 
 See [Todo](https://github.com/Stillpoint-Software/hyperbee.resources/blob/main/docs/todo.md)
