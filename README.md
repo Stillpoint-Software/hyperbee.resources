@@ -27,7 +27,7 @@ Inject IResourceProvider<Implementation> to use.
 
 # Build Requirements
 
-* To build and run this project, **.NET 9 SDK** is required.
+* To build and run this project, **.NET 10 SDK** is required.
 * Ensure your development tools are compatible with .NET 8 or higher.
 
 ## Building the Project
@@ -43,8 +43,8 @@ Inject IResourceProvider<Implementation> to use.
 
 | Branch     | Action                                                                                                                                                                                                                      |
 |------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| `develop`  | [![Build status](https://github.com/Stillpoint-Software/hyperbee.resources/actions/workflows/publish.yml/badge.svg?branch=develop)](https://github.com/Stillpoint-Software/hyperbee.resources/actions/workflows/pack_publish.yml)  |
-| `main`     | [![Build status](https://github.com/Stillpoint-Software/hyperbee.resources/actions/workflows/publish.yml/badge.svg)](https://github.com/Stillpoint-Software/hyperbee.resources/actions/workflows/pack_publish.yml)                 |
+| `develop`  | [![Build status](https://github.com/Stillpoint-Software/hyperbee.resources/actions/workflows/pack_publish.yml/badge.svg?branch=develop)](https://github.com/Stillpoint-Software/hyperbee.resources/actions/workflows/pack_publish.yml)  |
+| `main`     | [![Build status](https://github.com/Stillpoint-Software/hyperbee.resources/actions/workflows/pack_publish.yml/badge.svg)](https://github.com/Stillpoint-Software/hyperbee.resources/actions/workflows/pack_publish.yml)                 |
 
 # Help
 
