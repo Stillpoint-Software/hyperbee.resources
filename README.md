@@ -49,5 +49,3 @@ Inject IResourceProvider<Implementation> to use.
 # Help
 
 See [Todo](https://github.com/Stillpoint-Software/hyperbee.resources/blob/main/docs/todo.md)
-
-[![Hyperbee.Resources](https://github.com/Stillpoint-Software/Hyperbee.Resources/blob/main/assets/hyperbee.svg?raw=true)](https://github.com/Stillpoint-Software/Hyperbee.Resources)
