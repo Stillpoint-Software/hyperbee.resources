@@ -27,12 +27,15 @@ Inject IResourceProvider<Implementation> to use.
 
 # Build Requirements
 
-* To build and run this project, **.NET 10 SDK** is required.
-* Ensure your development tools are compatible with .NET 8 or higher.
+* Building this repository requires the **.NET 11 SDK**. It cross-targets `net11.0`,
+  `net10.0` and `netstandard2.1`, and the older targeting packs come from NuGet, so
+  one SDK covers every target.
+* Consuming the package requires .NET 8 or later. A `net8.0` or `net9.0` project
+  resolves the `netstandard2.1` asset.
 
 ## Building the Project
 
-* With .NET 9 SDK installed, you can build the project using the standard `dotnet build` command.
+* With the .NET 11 SDK installed, build the project using the standard `dotnet build` command.
 
 ## Running Tests
 
