@@ -32,8 +32,14 @@
       <PackagePath>\</PackagePath>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <PackageReference Update="Microsoft.SourceLink.GitHub"/>
-    <PackageReference Update="Nerdbank.GitVersioning" />
+  </ItemGroup>
+
+  <!--
+    Shared internal helpers, compiled into the project so they stay off the public
+    surface. Currently only the netstandard2.1 compiler shims.
+  -->
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)..\Shared\*.cs" LinkBase="Shared" />
   </ItemGroup>
 
   <ItemGroup>

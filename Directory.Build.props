@@ -3,13 +3,19 @@
     <!-- Suppress NU1507 (multiple package sources with CPM) -->
     <NoWarn>$(NoWarn);NU1507</NoWarn>
   </PropertyGroup>
+
+  <!--
+    Build-only packages. PrivateAssets must live here, on the PackageReference.
+    NuGet reads only Version from a PackageVersion item in Directory.Packages.props,
+    so PrivateAssets written there is silently ignored and the package is emitted
+    into every dependency group of the nupkg.
+  -->
   <ItemGroup>
     <PackageReference Include="Nerdbank.GitVersioning" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.SourceLink.GitHub" >
+    <PackageReference Include="Microsoft.SourceLink.GitHub">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
-    <PackageReference Include="Microsoft.CodeAnalysis.CSharp.Scripting"/>
   </ItemGroup>
 
   <!-- SourceLink / build hygiene -->
@@ -25,31 +31,38 @@
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageLicenseFile>LICENSE</PackageLicenseFile>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <PackageIcon>assets/icon.png</PackageIcon>
-    <PackageReleaseNotes>https://github.com/Stillpoint-Software/Hyperbee.Collections/releases/latest</PackageReleaseNotes>
-    <RepositoryUrl>https://github.com/Stillpoint-Software/Hyperbee.Collections</RepositoryUrl>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReleaseNotes>https://github.com/Stillpoint-Software/Hyperbee.Resources/releases/latest</PackageReleaseNotes>
+    <RepositoryUrl>https://github.com/Stillpoint-Software/Hyperbee.Resources</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageProjectUrl>https://github.com/Stillpoint-Software/Hyperbee.Collections</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/Stillpoint-Software/Hyperbee.Resources</PackageProjectUrl>
   </PropertyGroup>
 
-  <!-- Pull README & LICENSE into the package root -->
-  <ItemGroup Condition="'$(IsPackable)' == 'true'">
-    <None Include="..\..\assets\icon.png" Pack="true" Visible="false" PackagePath="/" />
-    <None Include="$(MSBuildThisFileDirectory)README.md"
-          Pack="true"
-          PackagePath="\"
-          Link="README.md" />
+  <!--
+    README, LICENSE and the icon are packed by the library csproj. They were packed
+    here as well, which produced three NU5118 warnings per pack because the same
+    package paths were contributed twice.
+  -->
 
-    <None Include="$(MSBuildThisFileDirectory)LICENSE"
-          Pack="true"
-          PackagePath="\"
-          Link="LICENSE" />
-  </ItemGroup>
-
-  <!-- Global project properies -->
+  <!-- Global project properties - .NET 10 LTS First Strategy -->
   <PropertyGroup>
     <ImplicitUsings>enable</ImplicitUsings>
-    <!-- Primary target: .NET 10 (next LTS), with .NET 9 for current support, .NET 8 for compatibility -->
-    <TargetFrameworks>net10.0;net9.0;net8.0</TargetFrameworks>
+    <!--
+      Primary target: .NET 10 (LTS), with .NET 11 (STS) for current support.
+      net8.0 and net9.0 are gone: both reached end of support on 2026-11-10.
+      netstandard2.1 is the compatibility floor, so a net8.0 or net9.0 consumer
+      still resolves an asset and this stays a non-breaking change.
+    -->
+    <TargetFrameworks>net11.0;net10.0;netstandard2.1</TargetFrameworks>
   </PropertyGroup>
+
+  <!--
+    The SDK defaults netstandard2.1 to C# 8, which predates init accessors and
+    collection expressions, both of which this library's sources use. net10.0 and
+    net11.0 already default to the SDK's latest, so this only affects netstandard.
+  -->
+  <PropertyGroup Condition="$(TargetFramework.StartsWith('netstandard'))">
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
 </Project>
