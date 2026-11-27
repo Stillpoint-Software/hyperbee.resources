@@ -35,11 +35,11 @@
   </ItemGroup>
 
   <!--
-    Shared internal helpers, compiled into the project so they stay off the public
-    surface. Currently only the netstandard2.1 compiler shims.
+    The compiler-required types for netstandard2.1 come from PolySharp; see
+    Directory.Build.props. This project needs no other netstandard2.1 shims.
   -->
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)..\Shared\*.cs" LinkBase="Shared" />
+    <PackageReference Include="PolySharp" PrivateAssets="all" />
   </ItemGroup>
 
   <ItemGroup>
