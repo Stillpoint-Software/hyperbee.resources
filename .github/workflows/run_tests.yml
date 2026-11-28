@@ -1,4 +1,4 @@
-﻿name: Run Tests
+name: Run Tests
 
 on:
   workflow_run:
@@ -48,7 +48,7 @@ jobs:
     with:
       branch: ${{ needs.discover.outputs.branch_name }}
       solution_name: ${{ vars.SOLUTION_NAME }}
-      # Opt in. The shared workflow still defaults to ["net8.0", "net9.0", "net10.0"],
-      # neither of which this repo targets any more.
+      # Keep in step with <TargetFrameworks> in Directory.Build.props.
+      # netstandard2.1 is built but not tested: it has no test host.
       frameworks: '["net11.0", "net10.0"]'
     secrets: inherit
